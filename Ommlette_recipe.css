@@ -1,0 +1,133 @@
+@font-face {  
+  font-family: 'MyCustomFont';  
+  src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('woff2');
+
+	font-weight: normal;  
+  font-style: normal;  
+}
+
+@font-face {  
+  font-family: 'HeaderFont';  
+  src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf') format('woff2');
+	
+	font-weight: normal;  
+  font-style: normal;  
+}
+.main_container {
+	font-family: 'MyCustomFont';
+	font-size: 16px;
+	background: linear-gradient(to right, rgb(251, 238, 157), #9ab0d2);  
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 1800px;
+}
+
+.main_container .inner_cont {
+	border-radius: 20px;
+	width: 50vw;
+	height: auto;
+	background-color: white;
+	padding: 40px 40px;
+}
+
+.main_container .inner_cont .pic_header .header_text .header {
+	font-family: 'HeaderFont';
+}
+
+.main_container .inner_cont .pic_header .img_cont img {
+	width: 50vw;
+	height: 50vh;
+	border-radius: 10px;
+}
+
+.main_container .inner_cont .pic_header .prepar_time {
+	padding: 10px 50px;
+	border-radius: 20px;
+	background-color: hsla(0, 59%, 41%, 0.023);
+	color: brown;
+	margin-top: 30px;
+}
+.main_container .inner_cont .pic_header .prepar_time ul li {
+	margin-top: 10px;
+}
+
+.main_container .inner_cont .pic_header .prepar_time ul b {
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+.main_container .inner_cont .ingredients {
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 10px;
+}
+
+.main_container .inner_cont .ingredients .ingr_header {
+	margin: 10px 0px;
+	color: brown;
+	font-family: 'HeaderFont';
+	letter-spacing: 1.5px;
+}
+
+.main_container .inner_cont .ingredients ul li {
+	margin-top: 10px;
+	padding-left: 10px;
+}
+
+.main_container .inner_cont .instruction {
+	border-bottom: 1px solid lightgray;
+}
+
+.main_container .inner_cont .instruction .instruction_header {
+	font-family: 'HeaderFont';
+	color: brown;
+}
+
+.main_container .inner_cont .instruction ol {
+	list-style-type: none;
+	counter-reset: item;
+	color: brown;
+}
+
+.main_container .inner_cont .instruction ol li {
+	margin-top: 10px;
+	color: black;
+}
+
+ol li::before {  
+  content: counter(item) "."; /* display the list number */  
+  color: brown; /* set the color for the list number */  
+  counter-increment: item; /* increment the counter for the list number */  
+  margin-right: 1em; /* add some spacing between the number and the content */  
+}  
+
+.main_container .inner_cont .instruction ol li div {
+	margin-left: 20px;
+}
+
+.main_container .inner_cont .nutritions {
+	margin-top: 10px;
+}
+
+.main_container .inner_cont .nutritions .nutri_header {
+	color: brown;
+	font-family: 'HeaderFont';
+}
+
+
+.main_container .inner_cont .nutritions div li{
+	border-bottom: 1px solid lightgray;
+	padding: 10px 0px;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.main_container .inner_cont .nutritions div li:last-child {
+	border: none;
+}
+
+
